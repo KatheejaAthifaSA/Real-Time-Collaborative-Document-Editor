@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+#toolbar {
+  background: #fff;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#editor-container {
+  height: 80vh;
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input, button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

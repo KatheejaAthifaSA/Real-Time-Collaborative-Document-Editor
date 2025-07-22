@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-box">
+    <h2>Enter your name</h2>
+    <input type="text" id="username" placeholder="e.g. James" />
+    <button onclick="login()">Enter</button>
+  </div>
+
+  <script>
+    function login() {
+      const name = document.getElementById('username').value.trim();
+      if (!name) return alert("Enter a valid name");
+      localStorage.setItem('username', name);
+      window.location.href = 'editor.html';
+    }
+  </script>
+</body>
+</html>
